@@ -1,13 +1,10 @@
 def is_even(x):
-    if x % 2 == 0:
-        return True
-    else:
-        return False
+    return x % 2 == 0
 
 number = int(input("What's x? "))
-result = is_even(number)
 
-if result:
+
+if is_even(number):
     print(f"{number} is even")
 else:
     print(f"{number} is odd")
